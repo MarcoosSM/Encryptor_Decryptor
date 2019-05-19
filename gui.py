@@ -7,8 +7,9 @@ class gui():
         self.raiz = Tk()
         self.raiz.title("Encryptor/Decryptor")
         self.raiz.geometry('300x300')
-        self.raiz.iconbitmap('C://Users//Marcos//Documents//2DAM//Sistemas de gestión empresarial//U3\Actividades Python//Encryptor_Decryptor//Encryptor_Decryptor.ico')
-
+        path = __file__.replace('gui.py', 'Encryptor_Decryptor.ico')
+        self.raiz.iconbitmap(path)
+		
         fuente = font.Font(weight='bold')
 
         self.etiq1 = ttk.Label(self.raiz, text="Select an option:", font=fuente)           
